@@ -11,22 +11,35 @@
 body {
     line-height: 1;
     display: flex;
+    color: white;
 }
 
 ol, ul {
     list-style: none;
 }
 
+a {
+    color: white;
+}
+
 .root_section {
     width: 100%;
-    background-color: #1D1D22;
+    background-color: #191A1E;
+    /* background-image: url("./images/main_image.png");
+    background-repeat: no-repeat; */
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 32px;
 }
 
 .side_menu {
     width: 168px;
-    background-color: #25262E;
+    background-color: #1D1D22;
     height: 100vh;
     flex-shrink: 0;
+    border-right: 1px solid #25262E;
 }
 
 .logo {
@@ -36,15 +49,14 @@ ol, ul {
 
 .side_menu_list {
     font-size: 16px;
+    border-bottom: 1px solid #25262E;
 }
 
 .side_menu_list-item {
-    padding-left: 16px;
-    padding-top: 32px;
+    padding: 32px 16px 16px;
 }
 
 .side_menu_list-item a {
-    color: white;
     text-decoration: none;
 }
 
@@ -54,7 +66,7 @@ ol, ul {
     height: 64px;
     display: flex;
     position: relative;
-    background-color: #25262E;
+    background-color: #1D1D22;
     padding: 0 32px;
 }
 
@@ -70,7 +82,6 @@ ol, ul {
 
 .profile {
     display: flex;
-    color: white;
 }
 
 .profile_image {
@@ -80,12 +91,13 @@ ol, ul {
 
 .main {
     width: 682px;
-    padding: 76px 32px;
-    color: white;
+    margin: 76px 0 24px 32px;
+    background-color: #1D1D22;
 }
 
-.main_card_header {
-    background-color: #25262E;
+
+.card_header {
+
     display: inline-flex;
     border-radius: 20px;
     padding: 24px;
@@ -93,17 +105,17 @@ ol, ul {
     align-items: start;
 }
 
-.main_card_logo {
+.card_logo {
     width: 80px;
     margin-right: 16px;
 }
 
-.main_card_title {
+.card_title {
     font-size: 24px;
     margin-bottom: 8px;
 }
 
-.main_card_description {
+.card_description {
     margin-bottom: 8px;
     font-family: Gilroy;
     font-size: 14px;
@@ -113,8 +125,8 @@ ol, ul {
 }
 
 .join_community_button {
-    color: white;
     background-color:  #234990;
+    color: white;
     border-radius: 10px;
     cursor: pointer;
     padding: 8px 24px;
@@ -131,16 +143,18 @@ ol, ul {
     transition: background-color 0s;
 }
 
-.main_card_events {
-    border-radius: 20px;
-    background-color: #25262E;
-    padding: 24px;
+.sections {
+    display: flex;
 }
 
-.events_title {
-    font-size: 20px;
-    margin-bottom: 32px;
+.card_events {
+    width: 682px;
+    border-radius: 20px;
+    background-color: #1D1D22;
+    padding: 24px;
+    margin-left: 32px;
 }
+
 
 .event_card {
     width: 100%;
@@ -170,4 +184,31 @@ ol, ul {
 
 .event_card_time { 
     margin-left: auto;
+}
+
+.most_active_players {
+    border-radius: 20px;
+    background-color: #1D1D22;
+    padding: 24px;
+    width: 451px;
+    margin-left: 24px;
+}
+
+.player_card {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.player_logo {
+    border-radius: 10px;
+    margin-right: 16px;
+}
+
+.player_description {
+    display: flex;
+    flex-direction: column;
+}
+
+.player_nickname {
+    margin-bottom: 4px;
 }
